@@ -34,23 +34,21 @@ MAP-REDUCE:
 PIPELINE:
 	balanceConversion = {
 		$addFields: {
-			"convertedCredit": {
-				$map: {
-					input: "$credit",
-					in: {
-						"currency": "$$this.currency",
-						"balance": {
-							$convert: {input: "$$this.balance", to: "double"}
-						}
-					}
-				}
+			"credit.convertedBalance": {
+				$convert: {input: "$credit.balance", to: "double"}
 			}
+		}
+	};
+	sumOfBalanceByCurrency = {
+		$group: {
+			"_id": "$credit.currency",
+			"balanceSum": {$sum: "$credit.convertedBalance"}
 		}
 	};
 	db.people.aggregate([
 		{$unwind: "$credit"},
 		balanceConversion,
-		{$limit: 2}
+		sumOfBalanceByCurrency
 	]).toArray()
 
 
@@ -73,10 +71,6 @@ balanceConversion = {
 		}
 	};
 
-
-"credit.convertedBalance": {
-				$convert: {input: "$credit.balance", to: "double"}
-			}
 MAP-REDUCE:
 
 
