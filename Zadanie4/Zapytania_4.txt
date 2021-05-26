@@ -74,9 +74,15 @@ balanceConversion = {
 MAP-REDUCE:
 
 
-3)
-PIPELINE:
-
+3)	????? (pytanie czy chodzi o listę zawierającą wszystkie zawody bez powtórzeń, czy listę zawierającą zawody w którym pracuje tylko jedna osoba z całej bazy)
+PIPELINE: 
+	db.people.aggregate([
+		{
+			$group: {
+				"_id": "$job"
+			}
+		}
+	])
 
 MAP-REDUCE:
 
