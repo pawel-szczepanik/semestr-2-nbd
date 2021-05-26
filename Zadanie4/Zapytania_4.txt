@@ -1,0 +1,98 @@
+1)
+PIPELINE:
+	weightConversion = {
+		$addFields: {
+			convertedWeight: {
+				$convert: {input: "$weight", to: "double"}
+			}
+		}
+	};
+	heightConvertion = {
+		$addFields: {
+			convertedHeight: {
+				$convert: {input: "$height", to: "double"}
+			}
+		}
+	};
+	avgWeightAndHeightBySex = {
+		$group: {
+			"_id": "$sex",
+			"avgWeight": {$avg: "$convertedWeight"},
+			"avgHeight": {$avg: "$convertedHeight"}
+		}
+	};
+	db.people.aggregate([
+		weightConversion,
+		heightConvertion,
+		avgWeightAndHeightBySex
+	])
+
+MAP-REDUCE:
+
+
+2)
+PIPELINE:
+	balanceConversion = {
+		$addFields: {
+			"convertedCredit": {
+				$map: {
+					input: "$credit",
+					in: {
+						"currency": "$$this.currency",
+						"balance": {
+							$convert: {input: "$$this.balance", to: "double"}
+						}
+					}
+				}
+			}
+		}
+	};
+	db.people.aggregate([
+		{$unwind: "$credit"},
+		balanceConversion,
+		{$limit: 2}
+	]).toArray()
+
+
+
+
+==== do konwertowania warotści w tablicach ====
+balanceConversion = {
+		$addFields: {
+			"convertedCredit": {
+				$map: {
+					input: "$credit",
+					in: {
+						"currency": "$$this.currency",
+						"balance": {
+							$convert: {input: "$$this.balance", to: "double"}
+						}
+					}
+				}
+			}
+		}
+	};
+
+
+"credit.convertedBalance": {
+				$convert: {input: "$credit.balance", to: "double"}
+			}
+MAP-REDUCE:
+
+
+3)
+PIPELINE:
+
+
+MAP-REDUCE:
+
+
+4)
+PIPELINE:
+
+
+MAP-REDUCE:
+
+
+5)
+
