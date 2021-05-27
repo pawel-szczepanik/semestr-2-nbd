@@ -33,9 +33,7 @@ MAP-REDUCE:
 		var convertedWeight = parseFloat(this.weight);
 		var convertedHeight = parseFloat(this.height);
 		
-		var key = {
-			sex: this.sex
-		};
+		var key = this.sex;
 	
 		var values = {
 			weight: convertedWeight,
@@ -104,26 +102,6 @@ PIPELINE:
 		sumOfBalanceByCurrency
 	]).toArray()
 
-
-
-
-==== do konwertowania warotści w tablicach ====
-balanceConversion = {
-		$addFields: {
-			"convertedCredit": {
-				$map: {
-					input: "$credit",
-					in: {
-						"currency": "$$this.currency",
-						"balance": {
-							$convert: {input: "$$this.balance", to: "double"}
-						}
-					}
-				}
-			}
-		}
-	};
-
 MAP-REDUCE:
 	var mapFunction = function() {
 		this.credit.forEach(function(item) {
@@ -147,7 +125,7 @@ MAP-REDUCE:
 	)
 	
 
-3)	????? (pytanie czy chodzi o listę zawierającą wszystkie zawody bez powtórzeń, czy listę zawierającą zawody w którym pracuje tylko jedna osoba z całej bazy)
+3)
 PIPELINE: 
 	db.people.aggregate([
 		{
@@ -155,7 +133,7 @@ PIPELINE:
 				"_id": "$job"
 			}
 		}
-	])
+	]).toArray()
 
 MAP-REDUCE:
 	var mapFunction = function() {
