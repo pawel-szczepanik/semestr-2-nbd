@@ -159,23 +159,18 @@ PIPELINE:
 
 MAP-REDUCE:
 	var mapFunction = function() {
-		
+		emit(this.job, null);
 	};
 	var reduceFunction = function(key, values) {
-		
+		var reducedValue = null;
 		
 		return reducedValue;
-	};
-	var finalizeFunction = function(key, reducedValue) {
-		
-		return modifiedValue;
 	};
 	db.people.mapReduce(
 		mapFunction,
 		reduceFunction,
 		{
-			out: {inline: 1},
-			finalize: finalizeFunction
+			out: {inline: 1}
 		}
 	)
 
