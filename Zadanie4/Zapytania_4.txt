@@ -125,7 +125,27 @@ balanceConversion = {
 	};
 
 MAP-REDUCE:
-
+	var mapFunction = function() {
+		this.credit.forEach(function(item) {
+			var key = item.currency;
+			var value = parseFloat(item.balance);
+		
+			emit(key, value);
+		});
+	};
+	var reduceFunction = function(key, values) {
+		var reducedValue = Array.sum(values);
+		
+		return reducedValue;
+	};
+	db.people.mapReduce(
+		mapFunction,
+		reduceFunction,
+		{
+			out: {inline: 1}
+		}
+	)
+	
 
 3)	????? (pytanie czy chodzi o listę zawierającą wszystkie zawody bez powtórzeń, czy listę zawierającą zawody w którym pracuje tylko jedna osoba z całej bazy)
 PIPELINE: 
@@ -138,6 +158,26 @@ PIPELINE:
 	])
 
 MAP-REDUCE:
+	var mapFunction = function() {
+		
+	};
+	var reduceFunction = function(key, values) {
+		
+		
+		return reducedValue;
+	};
+	var finalizeFunction = function(key, reducedValue) {
+		
+		return modifiedValue;
+	};
+	db.people.mapReduce(
+		mapFunction,
+		reduceFunction,
+		{
+			out: {inline: 1},
+			finalize: finalizeFunction
+		}
+	)
 
 
 4)
@@ -179,7 +219,26 @@ PIPELINE:
 	]).toArray()
 
 MAP-REDUCE:
-
+	var mapFunction = function() {
+		
+	};
+	var reduceFunction = function(key, values) {
+		
+		
+		return reducedValue;
+	};
+	var finalizeFunction = function(key, reducedValue) {
+		
+		return modifiedValue;
+	};
+	db.people.mapReduce(
+		mapFunction,
+		reduceFunction,
+		{
+			out: {inline: 1},
+			finalize: finalizeFunction
+		}
+	)
 
 5)
 PIPELINE:
@@ -212,6 +271,25 @@ PIPELINE:
 
 
 MAP-REDUCE:
-
+	var mapFunction = function() {
+		
+	};
+	var reduceFunction = function(key, values) {
+		
+		
+		return reducedValue;
+	};
+	var finalizeFunction = function(key, reducedValue) {
+		
+		return modifiedValue;
+	};
+	db.people.mapReduce(
+		mapFunction,
+		reduceFunction,
+		{
+			out: {inline: 1},
+			finalize: finalizeFunction
+		}
+	)
 
 
