@@ -8,11 +8,8 @@ class Cwiczenie3 {
     @tailrec
     def tailRec(valuesTailRec: Array[String], result: String): String = {
       val valueLength = valuesTailRec.length
-      if (valueLength == 1) {
-        return result
-      }
-
-      tailRec(valuesTailRec.slice(1, valueLength), result + "," + valuesTailRec(1))
+      if (valueLength == 1) result
+      else tailRec(valuesTailRec.slice(1, valueLength), result + "," + valuesTailRec(1))
     }
     tailRec(values, values(0))
   }

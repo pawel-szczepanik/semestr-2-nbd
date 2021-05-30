@@ -14,6 +14,7 @@ object Main extends App {
   println("1c: " + cwiczenie1.printArrayAsStringCommaSeparateWhileLoop(daysOfWeek))
   println("===================================")
 
+  println()
 
   println("============Cwiczenie 2============")
   val cwiczenie2 = new Cwiczenie2
@@ -23,37 +24,56 @@ object Main extends App {
   println("2b: " + cwiczenie2.printArrayAsStringCommaSeparateFromEndRecursion(daysOfWeek))
   println("===================================")
 
+  println()
+
   println("============Cwiczenie 3============")
   val cwiczenie3 = new Cwiczenie3
   println("3: " + cwiczenie3.printArrayAsStringCommaSeparateTailCall(daysOfWeek))
   println("===================================")
 
-  println("============Cwiczenie 4============")
+  println()
 
+  println("============Cwiczenie 4============")
+  val cwiczenie4 = new Cwiczenie4
+  //Cwiczenie 4a
+  println("4a: " + cwiczenie4.printArrayAsStringCommaSeparateFoldLeft(daysOfWeek))
+  //Cwiczenie 4b
+  println("4b: " + cwiczenie4.printArrayAsStringCommaSeparateFoldRight(daysOfWeek))
+  //Cwiczenie 4c
+  println("4c: " + cwiczenie4.printArrayAsStringCommaSeparateStartWithPFoldLeft(daysOfWeek))
   println("===================================")
+
+  println()
 
   println("============Cwiczenie 5============")
 
   println("===================================")
 
+  println()
+
   println("============Cwiczenie 6============")
 
   println("===================================")
 
+  println()
 
   println("============Cwiczenie 7============")
 
   println("===================================")
 
+  println()
+
   println("============Cwiczenie 8============")
 
   println("===================================")
 
+  println()
 
   println("============Cwiczenie 9============")
 
   println("===================================")
 
+  println()
 
   println("============Cwiczenie 10============")
 
