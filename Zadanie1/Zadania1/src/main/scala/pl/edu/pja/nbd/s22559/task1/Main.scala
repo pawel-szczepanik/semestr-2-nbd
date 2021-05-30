@@ -57,7 +57,11 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 6============")
+  val tuple = Cwiczenie6.tuple
+  val cwiczenie6 = new Cwiczenie6()
 
+  println("print tuple:")
+  cwiczenie6 printTuple tuple
   println("===================================")
 
   println()
