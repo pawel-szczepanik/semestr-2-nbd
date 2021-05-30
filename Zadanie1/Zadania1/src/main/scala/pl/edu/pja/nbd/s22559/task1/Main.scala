@@ -95,14 +95,20 @@ object Main extends App {
   val integers = Cwiczenie9.integers
   val cwiczenie9 = new Cwiczenie9()
 
-  println("integers: " + integers)
+  println("integers (before increment): " + integers)
   println("incrementIntegers: " + cwiczenie9.incrementAll(integers))
+  println("integers (after increment): " + integers)
   println("===================================")
 
   println()
 
   println("============Cwiczenie 10============")
+  val doubles = Cwiczenie10.doubles
+  val cwiczenie10 = new Cwiczenie10()
 
+  println("doubles (before abs): " + doubles)
+  println("absDoubles (in range <-5, 12>: " + cwiczenie10.absRangeFromMinusFiveToTwelve(doubles))
+  println("doubles (after abs): " + doubles)
   println("====================================")
 
 }
