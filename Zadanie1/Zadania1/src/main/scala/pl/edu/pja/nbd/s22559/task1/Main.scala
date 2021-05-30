@@ -92,7 +92,11 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 9============")
+  val integers = Cwiczenie9.integers
+  val cwiczenie9 = new Cwiczenie9()
 
+  println("integers: " + integers)
+  println("incrementIntegers: " + cwiczenie9.incrementAll(integers))
   println("===================================")
 
   println()
