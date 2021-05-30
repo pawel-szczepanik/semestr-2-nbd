@@ -1,6 +1,6 @@
-package pl.edu.pja.nbd.s22559.task1
+package pl.edu.pja.nbd.task1
 
-import pl.edu.pja.nbd.s22559.task1.Cwiczenie7.capitals
+import pl.edu.pja.nbd.task1.Cwiczenie7.capitals
 
 class Cwiczenie7 {
   def getCapital(country: String): Option[String] = capitals get country

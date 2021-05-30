@@ -1,4 +1,4 @@
-package pl.edu.pja.nbd.s22559.task1
+package pl.edu.pja.nbd.task1
 
 class Cwiczenie10 {
   def absRangeFromMinusFiveToTwelve(doubles: List[Double]): List[Double] = {
