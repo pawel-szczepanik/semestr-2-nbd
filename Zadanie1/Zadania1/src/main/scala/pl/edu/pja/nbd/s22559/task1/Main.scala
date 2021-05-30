@@ -67,7 +67,16 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 7============")
+  val capitals = Cwiczenie7.capitals
+  val cwiczenie7 = new Cwiczenie7()
 
+  println("capitals: " + capitals)
+  //exists in capitals
+  private val capitalOfEstonia: Option[String] = cwiczenie7.getCapital("Estonia")
+  println("The capital of Estonia: " + capitalOfEstonia + " (" + (if (capitalOfEstonia.nonEmpty) "exists" else "not exist") + ")")
+  //not exist in capitals
+  private val capitalOfLatvia: Option[String] = cwiczenie7.getCapital("Latvia")
+  println("The capital of Latvia: " + capitalOfLatvia + " (" + (if (capitalOfLatvia.nonEmpty) "exists" else "not exist") + ")")
   println("===================================")
 
   println()
