@@ -46,7 +46,12 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 5============")
+  val productMap = Cwiczenie5.productMap
+  val cwiczenie5 = new Cwiczenie5()
 
+  println("productMap (before discount): " + productMap)
+  println("productTenPercentOffMap: " + cwiczenie5.tenPercentOff(productMap))
+  println("productMap (after discount): " + productMap)
   println("===================================")
 
   println()
