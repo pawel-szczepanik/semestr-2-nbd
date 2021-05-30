@@ -82,7 +82,11 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 8============")
+  val integersWithZeros = Cwiczenie8.integersWithZeros
+  val cwiczenie8 = new Cwiczenie8()
 
+  println("integersWithZeros: " + integersWithZeros)
+  println("integersWithoutZeros: " + cwiczenie8.removeZeros(integersWithZeros))
   println("===================================")
 
   println()
