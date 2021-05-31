@@ -52,7 +52,7 @@ project/plugins/project/
 # .idea/jarRepositories.xml
 # .idea/modules.xml
 # .idea/*.iml
-# .idea/modules
+.idea/modules
 # *.iml
 # *.ipr
 
@@ -91,10 +91,8 @@ fabric.properties
 
 ### Java template
 # Compiled class file
-*.class
 
 # Log file
-*.log
 
 # BlueJ files
 *.ctxt
