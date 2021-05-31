@@ -39,7 +39,17 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 3============")
+  val someOsobas = Osoba.someOsobas
 
+  def greeting(osoba: Osoba): String = osoba match {
+    case Osoba("Imie1", nazwisko) => s"Czesc Imie1 $nazwisko"
+    case Osoba(imie, "Nazwisko3") => s"Siemaneczko $imie Nazwisko3"
+    case Osoba("Imie5", "Nazwisko5") => s"Dzien Dobry Imie5 Nazwisko5"
+    case Osoba("Imie5", nazwisko) => s"Jak leci Imie5 $nazwisko?"
+    case Osoba(imie, nazwisko) => s"Moje uszanowanie $imie $nazwisko"
+  }
+
+  someOsobas.foreach(osoba => println(greeting(osoba)))
   println("===================================")
 
   println()
