@@ -8,4 +8,49 @@ object Main extends App {
 
   testStrings.foreach(string => println("string in: " + string + "; out: " + cwiczenie1.daysOfWeekCases(string)))
   println("===================================")
+
+  println()
+
+  println("============Cwiczenie 2============")
+  val kontoBankowe1 = new KontoBankowe(300.00)
+  val kontoBankowe2 = new KontoBankowe()
+
+  //stanKonta
+  println("kontoBankowe1 (stan poczatkowy): " + kontoBankowe1.getStanKonta)
+  println("kontoBankowe2 (stan poczatkowy): " + kontoBankowe2.getStanKonta)
+
+  //wplata
+  kontoBankowe1.wplata(500.00)
+  kontoBankowe2.wplata(300.00)
+  println("kontoBankowe1 (wplata 500.00): " + kontoBankowe1.getStanKonta)
+  println("kontoBankowe2 (wplata 300.00): " + kontoBankowe2.getStanKonta)
+
+  //wyplata
+  kontoBankowe1.wyplata(650.00)
+  kontoBankowe2.wyplata(650.00)
+  println("kontoBankowe1 (wyplata 650.00): " + kontoBankowe1.getStanKonta)
+  println("kontoBankowe2 (wyplata 650.00): " + kontoBankowe2.getStanKonta + " | wyplacono najwiecej ile mozna bylo nie przekraczajac wartosc 0")
+
+  //proba wplaty -150.00
+  kontoBankowe1.wplata(-150.00)
+  println("kontoBankowe1 (wplata -150.00): " + kontoBankowe1.getStanKonta + " | proba wplaty kwoty mniejszej niz rownej 0 skutkuje brakiem jakiejkowiek czynnosci")
+  println("===================================")
+
+  println()
+
+  println("============Cwiczenie 3============")
+
+  println("===================================")
+
+  println()
+
+  println("============Cwiczenie 4============")
+
+  println("===================================")
+
+  println()
+
+  println("============Cwiczenie 5============")
+
+  println("===================================")
 }
