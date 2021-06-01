@@ -80,8 +80,8 @@ object Main extends App {
   ) with Nauczyciel
 
   println("student (podatek): " + student.podatek)
-  println("pracownik (podatek): " + pracownik.podatek)
-  println("nauczyciel (podatek): " + nauczyciel.podatek)
+  println("pracownik (podatek): " + pracownik.podatek + " | pensja=" + pracownik.pensja)
+  println("nauczyciel (podatek): " + nauczyciel.podatek + " | pensja=" + nauczyciel.pensja)
 
   val studentPracownik = new pl.edu.pja.nbd.task2.cwiczenie5.Osoba(
     "studentPracownikImie", "studentPracownikNazwisko", 1234567.89
