@@ -1,5 +1,7 @@
 package pl.edu.pja.nbd.task2
 
+import pl.edu.pja.nbd.task2.cwiczenie5.{Nauczyciel, Pracownik, Student}
+
 object Main extends App {
 
   println("============Cwiczenie 1============")
@@ -67,6 +69,31 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 5============")
+  val student = new pl.edu.pja.nbd.task2.cwiczenie5.Osoba(
+    "StudentImie", "StudentNazwisko"
+  ) with Student
+  val pracownik = new pl.edu.pja.nbd.task2.cwiczenie5.Osoba(
+    "PracownikImie", "PracownikNazwisko"
+  ) with Pracownik
+  val nauczyciel = new pl.edu.pja.nbd.task2.cwiczenie5.Osoba(
+    "NauczycielImie", "NauczycielNazwisko"
+  ) with Nauczyciel
+
+  println("student (podatek): " + student.podatek)
+  println("pracownik (podatek): " + pracownik.podatek)
+  println("nauczyciel (podatek): " + nauczyciel.podatek)
+
+  val studentPracownik = new pl.edu.pja.nbd.task2.cwiczenie5.Osoba(
+    "studentPracownikImie", "studentPracownikNazwisko", 1234567.89
+  ) with Student with Pracownik
+
+  println("first: Student; second: Pracownik (podatek): " + studentPracownik.podatek)
+
+  val pracownikStudent = new pl.edu.pja.nbd.task2.cwiczenie5.Osoba(
+    "studentPracownikImie", "studentPracownikNazwisko", 1234567.89
+  )  with Pracownik with Student
+
+  println("first: Pracownik; second: Student (podatek): " + pracownikStudent.podatek)
 
   println("===================================")
 }
