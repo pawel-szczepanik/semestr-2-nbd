@@ -55,7 +55,13 @@ object Main extends App {
   println()
 
   println("============Cwiczenie 4============")
+  val cwiczenie4 = new Cwiczenie4
 
+  val initialInteger: Int = 5
+  val integerFunction = (x: Int) => x + x
+  println("initialInteger: " + initialInteger)
+  val result = cwiczenie4.function(initialInteger, integerFunction)
+  println("result: " + result)
   println("===================================")
 
   println()
