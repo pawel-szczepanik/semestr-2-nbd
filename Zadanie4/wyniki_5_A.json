@@ -1,0 +1,371 @@
+MongoDB shell version v4.4.6
+connecting to: mongodb://127.0.0.1:27017/nbd_zad_4?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("395693cc-297b-4089-94e0-8873b80e29b7") }
+MongoDB server version: 4.4.6
+[
+	{
+		"_id" : "GBP",
+		"balanceAvg" : 6149.19,
+		"balanceSum" : 6149.19
+	},
+	{
+		"_id" : "KZT",
+		"balanceAvg" : 3788.95,
+		"balanceSum" : 3788.95
+	},
+	{
+		"_id" : "VEF",
+		"balanceAvg" : 4166.64,
+		"balanceSum" : 8333.28
+	},
+	{
+		"_id" : "EUR",
+		"balanceAvg" : 4901.8294,
+		"balanceSum" : 245091.47
+	},
+	{
+		"_id" : "AFN",
+		"balanceAvg" : 5585.163333333334,
+		"balanceSum" : 16755.49
+	},
+	{
+		"_id" : "MAD",
+		"balanceAvg" : 3818.85,
+		"balanceSum" : 3818.85
+	},
+	{
+		"_id" : "PKR",
+		"balanceAvg" : 4734.5,
+		"balanceSum" : 18938
+	},
+	{
+		"_id" : "DOP",
+		"balanceAvg" : 5168.6849999999995,
+		"balanceSum" : 20674.739999999998
+	},
+	{
+		"_id" : "ILS",
+		"balanceAvg" : 5431.83,
+		"balanceSum" : 16295.49
+	},
+	{
+		"_id" : "CAD",
+		"balanceAvg" : 5306.872727272727,
+		"balanceSum" : 58375.6
+	},
+	{
+		"_id" : "KRW",
+		"balanceAvg" : 6689.91,
+		"balanceSum" : 13379.82
+	},
+	{
+		"_id" : "MMK",
+		"balanceAvg" : 4629.42,
+		"balanceSum" : 4629.42
+	},
+	{
+		"_id" : "HNL",
+		"balanceAvg" : 5504.863333333334,
+		"balanceSum" : 16514.59
+	},
+	{
+		"_id" : "ZWL",
+		"balanceAvg" : 5792.17,
+		"balanceSum" : 5792.17
+	},
+	{
+		"_id" : "MKD",
+		"balanceAvg" : 3835.05,
+		"balanceSum" : 3835.05
+	},
+	{
+		"_id" : "VND",
+		"balanceAvg" : 4520.0325,
+		"balanceSum" : 36160.26
+	},
+	{
+		"_id" : "NPR",
+		"balanceAvg" : 5792.26,
+		"balanceSum" : 5792.26
+	},
+	{
+		"_id" : "TJS",
+		"balanceAvg" : 4087.71,
+		"balanceSum" : 4087.71
+	},
+	{
+		"_id" : "RUB",
+		"balanceAvg" : 4989.547916666666,
+		"balanceSum" : 119749.15
+	},
+	{
+		"_id" : "JPY",
+		"balanceAvg" : 5078.7283333333335,
+		"balanceSum" : 60944.74
+	},
+	{
+		"_id" : "PHP",
+		"balanceAvg" : 4941.928333333333,
+		"balanceSum" : 118606.28
+	},
+	{
+		"_id" : "CNY",
+		"balanceAvg" : 4954.740842105263,
+		"balanceSum" : 470700.38
+	},
+	{
+		"_id" : "IRR",
+		"balanceAvg" : 4417.373333333333,
+		"balanceSum" : 26504.239999999998
+	},
+	{
+		"_id" : "KYD",
+		"balanceAvg" : 3760.89,
+		"balanceSum" : 3760.89
+	},
+	{
+		"_id" : "GTQ",
+		"balanceAvg" : 5806.3,
+		"balanceSum" : 5806.3
+	},
+	{
+		"_id" : "MNT",
+		"balanceAvg" : 5428.9025,
+		"balanceSum" : 21715.61
+	},
+	{
+		"_id" : "SEK",
+		"balanceAvg" : 5060.013571428572,
+		"balanceSum" : 70840.19
+	},
+	{
+		"_id" : "BOB",
+		"balanceAvg" : 5263.3,
+		"balanceSum" : 5263.3
+	},
+	{
+		"_id" : "MWK",
+		"balanceAvg" : 3574.42,
+		"balanceSum" : 3574.42
+	},
+	{
+		"_id" : "THB",
+		"balanceAvg" : 4604.392,
+		"balanceSum" : 23021.96
+	},
+	{
+		"_id" : "ZAR",
+		"balanceAvg" : 3930.306666666667,
+		"balanceSum" : 11790.92
+	},
+	{
+		"_id" : "MXN",
+		"balanceAvg" : 5022.9,
+		"balanceSum" : 50229
+	},
+	{
+		"_id" : "RWF",
+		"balanceAvg" : 4632.88,
+		"balanceSum" : 4632.88
+	},
+	{
+		"_id" : "BYR",
+		"balanceAvg" : 5095.79,
+		"balanceSum" : 5095.79
+	},
+	{
+		"_id" : "ISK",
+		"balanceAvg" : 4316.41,
+		"balanceSum" : 4316.41
+	},
+	{
+		"_id" : "COP",
+		"balanceAvg" : 4936.6825,
+		"balanceSum" : 19746.73
+	},
+	{
+		"_id" : "LYD",
+		"balanceAvg" : 4382.495,
+		"balanceSum" : 8764.99
+	},
+	{
+		"_id" : "IDR",
+		"balanceAvg" : 4907.918030303031,
+		"balanceSum" : 323922.59
+	},
+	{
+		"_id" : "CZK",
+		"balanceAvg" : 4644.5525,
+		"balanceSum" : 37156.42
+	},
+	{
+		"_id" : "ARS",
+		"balanceAvg" : 4648.4,
+		"balanceSum" : 23242
+	},
+	{
+		"_id" : "PYG",
+		"balanceAvg" : 4874.69,
+		"balanceSum" : 4874.69
+	},
+	{
+		"_id" : "IQD",
+		"balanceAvg" : 4269.39,
+		"balanceSum" : 4269.39
+	},
+	{
+		"_id" : "NOK",
+		"balanceAvg" : 4773.66,
+		"balanceSum" : 4773.66
+	},
+	{
+		"_id" : "PLN",
+		"balanceAvg" : 5042.821111111111,
+		"balanceSum" : 90770.78
+	},
+	{
+		"_id" : "UZS",
+		"balanceAvg" : 3573.03,
+		"balanceSum" : 3573.03
+	},
+	{
+		"_id" : "ALL",
+		"balanceAvg" : 3325.48,
+		"balanceSum" : 3325.48
+	},
+	{
+		"_id" : "XAF",
+		"balanceAvg" : 4698.22,
+		"balanceSum" : 14094.66
+	},
+	{
+		"_id" : "USD",
+		"balanceAvg" : 5040.66875,
+		"balanceSum" : 80650.7
+	},
+	{
+		"_id" : "HRK",
+		"balanceAvg" : 4870.964,
+		"balanceSum" : 24354.82
+	},
+	{
+		"_id" : "PEN",
+		"balanceAvg" : 4645.469999999999,
+		"balanceSum" : 23227.35
+	},
+	{
+		"_id" : "UAH",
+		"balanceAvg" : 5058.9800000000005,
+		"balanceSum" : 40471.840000000004
+	},
+	{
+		"_id" : "NZD",
+		"balanceAvg" : 5328.46,
+		"balanceSum" : 5328.46
+	},
+	{
+		"_id" : "BWP",
+		"balanceAvg" : 4076.29,
+		"balanceSum" : 4076.29
+	},
+	{
+		"_id" : "MYR",
+		"balanceAvg" : 4781.12,
+		"balanceSum" : 4781.12
+	},
+	{
+		"_id" : "BGN",
+		"balanceAvg" : 5300.22,
+		"balanceSum" : 21200.88
+	},
+	{
+		"_id" : "ETB",
+		"balanceAvg" : 5436.11,
+		"balanceSum" : 5436.11
+	},
+	{
+		"_id" : "CDF",
+		"balanceAvg" : 6114.4,
+		"balanceSum" : 12228.8
+	},
+	{
+		"_id" : "SRD",
+		"balanceAvg" : 5286.68,
+		"balanceSum" : 5286.68
+	},
+	{
+		"_id" : "XPF",
+		"balanceAvg" : 4759.07,
+		"balanceSum" : 4759.07
+	},
+	{
+		"_id" : "CUP",
+		"balanceAvg" : 5005.78,
+		"balanceSum" : 15017.34
+	},
+	{
+		"_id" : "TZS",
+		"balanceAvg" : 3526.1850000000004,
+		"balanceSum" : 7052.370000000001
+	},
+	{
+		"_id" : "RSD",
+		"balanceAvg" : 4276.56,
+		"balanceSum" : 4276.56
+	},
+	{
+		"_id" : "AMD",
+		"balanceAvg" : 4921.866,
+		"balanceSum" : 24609.33
+	},
+	{
+		"_id" : "XOF",
+		"balanceAvg" : 5960.683333333333,
+		"balanceSum" : 17882.05
+	},
+	{
+		"_id" : "EGP",
+		"balanceAvg" : 5579.3,
+		"balanceSum" : 5579.3
+	},
+	{
+		"_id" : "YER",
+		"balanceAvg" : 4570.833333333333,
+		"balanceSum" : 13712.5
+	},
+	{
+		"_id" : "VUV",
+		"balanceAvg" : 6418.27,
+		"balanceSum" : 6418.27
+	},
+	{
+		"_id" : "ZMW",
+		"balanceAvg" : 5569.56,
+		"balanceSum" : 5569.56
+	},
+	{
+		"_id" : "CLP",
+		"balanceAvg" : 5252.2375,
+		"balanceSum" : 21008.95
+	},
+	{
+		"_id" : "NGN",
+		"balanceAvg" : 4157.705,
+		"balanceSum" : 24946.23
+	},
+	{
+		"_id" : "NIO",
+		"balanceAvg" : 4985.64,
+		"balanceSum" : 9971.28
+	},
+	{
+		"_id" : "BRL",
+		"balanceAvg" : 4512.001818181819,
+		"balanceSum" : 49632.020000000004
+	},
+	{
+		"_id" : "MGA",
+		"balanceAvg" : 4853.663333333333,
+		"balanceSum" : 14560.99
+	}
+]
