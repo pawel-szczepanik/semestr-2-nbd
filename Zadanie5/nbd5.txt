@@ -1,34 +1,50 @@
 1.	Wszystkie filmy
+	
 	MATCH (movies:Movie) return movies
 
+
 2.	Wszystkie filmy, w których grał Hugo Weaving 
+	
 	MATCH (movies:Movie) <-[:ACTED_IN]- (person:Person {name: "Hugo Weaving"}) RETURN movies
 
+
 3.	Reżyserzy filmów, w których grał Hugo Weaving 
+	
 	MATCH (person:Person {name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie:Movie) <-[:DIRECTED]- (director:Person)
 	RETURN DISTINCT director
 
 
 4.	Wszystkie osoby, z którymi Hugo Weaving grał w tych samych filmach 
+	
 	MATCH (hugo:Person {name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie:Movie) <-[:ACTED_IN]- (coActors:Person)
 	RETURN coActors
 
+
 5.	Wszystkie filmy osób, które grały w Matrix
+	
 	MATCH (matrix:Movie {title: "The Matrix"}) <-[:ACTED_IN]- (matrixActors:Person) -[:ACTED_IN]-> (movies:Movie)
 	RETURN movies
 
-6.	Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali 
 
+6.	Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali 
+	
 	MATCH (actor:Person) -[:ACTED_IN]-> (movie:Movie)
 	WITH actor, count(*) AS movieNo
 	RETURN actor, movieNo
 
 
-
 7.	Listę osób, które napisały scenariusz filmu, które wyreżyserowały wraz z tytułami takich filmów (koniunkcja – ten sam autor scenariusza i reżyser) 
+	
+	MATCH (people:Person)-->(movie:Movie)
+	WHERE (people) -[:WROTE]-> (movie)
+		AND (people) -[:DIRECTED]-> (movie)
+	RETURN DISTINCT people, movie.title
 
 
 8.	Listę filmów, w których grał zarówno Hugo Weaving jak i Keanu Reeves 
+	
+	MATCH (hugo:Person {name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie:Movie) <-[:ACTED_IN]- (keanu:Person {name: "Keanu Reeves"})
+	RETURN movie
 
 
 9.	(za 0.2pkt) Zestaw zapytań powodujących uzupełnienie bazy danych o film Captain America: The First Avenger wraz z uzupełnieniem informacji o reżyserze, scenarzystach i odtwórcach głównych ról (w oparciu o skrócone informacje z IMDB - http://www.imdb.com/title/tt0458339/) + zapytanie pokazujące dodany do bazy film wraz odtwórcami głównych ról, scenarzystą i reżyserem. Plik SVG ma pokazywać wynik ostatniego zapytania.  
