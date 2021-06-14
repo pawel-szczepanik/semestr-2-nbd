@@ -17,13 +17,13 @@
 4.	Wszystkie osoby, z którymi Hugo Weaving grał w tych samych filmach 
 	
 	MATCH (hugo:Person {name: "Hugo Weaving"}) -[:ACTED_IN]-> (movie:Movie) <-[:ACTED_IN]- (coActors:Person)
-	RETURN coActors
+	RETURN DISTINCT coActors
 
 
 5.	Wszystkie filmy osób, które grały w Matrix
 	
 	MATCH (matrix:Movie {title: "The Matrix"}) <-[:ACTED_IN]- (matrixActors:Person) -[:ACTED_IN]-> (movies:Movie)
-	RETURN movies
+	RETURN DISTINCT movies
 
 
 6.	Listę aktorów (aktor = osoba, która grała przynajmniej w jednym filmie) wraz z ilością filmów, w których grali 

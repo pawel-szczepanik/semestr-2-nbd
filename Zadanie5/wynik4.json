@@ -1,6 +1,54 @@
 ﻿[
   {
     "coActors": {
+"identity": 8,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Emil Eifrem",
+"born": 1978
+      }
+    }
+  },
+  {
+    "coActors": {
+"identity": 3,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Laurence Fishburne",
+"born": 1961
+      }
+    }
+  },
+  {
+    "coActors": {
+"identity": 2,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Carrie-Anne Moss",
+"born": 1967
+      }
+    }
+  },
+  {
+    "coActors": {
+"identity": 1,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    }
+  },
+  {
+    "coActors": {
 "identity": 71,
 "labels": [
         "Person"
@@ -80,126 +128,6 @@
 "properties": {
 "name": "Ben Miles",
 "born": 1967
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 3,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Laurence Fishburne",
-"born": 1961
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 2,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Carrie-Anne Moss",
-"born": 1967
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 1,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Keanu Reeves",
-"born": 1964
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 3,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Laurence Fishburne",
-"born": 1961
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 2,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Carrie-Anne Moss",
-"born": 1967
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 1,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Keanu Reeves",
-"born": 1964
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 8,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Emil Eifrem",
-"born": 1978
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 3,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Laurence Fishburne",
-"born": 1961
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 2,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Carrie-Anne Moss",
-"born": 1967
-      }
-    }
-  },
-  {
-    "coActors": {
-"identity": 1,
-"labels": [
-        "Person"
-      ],
-"properties": {
-"name": "Keanu Reeves",
-"born": 1964
       }
     }
   }

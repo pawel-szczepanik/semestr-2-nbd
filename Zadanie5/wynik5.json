@@ -53,58 +53,6 @@
   },
   {
     "movies": {
-"identity": 10,
-"labels": [
-        "Movie"
-      ],
-"properties": {
-"tagline": "Everything that has a beginning has an end",
-"title": "The Matrix Revolutions",
-"released": 2003
-      }
-    }
-  },
-  {
-    "movies": {
-"identity": 9,
-"labels": [
-        "Movie"
-      ],
-"properties": {
-"tagline": "Free your mind",
-"title": "The Matrix Reloaded",
-"released": 2003
-      }
-    }
-  },
-  {
-    "movies": {
-"identity": 10,
-"labels": [
-        "Movie"
-      ],
-"properties": {
-"tagline": "Everything that has a beginning has an end",
-"title": "The Matrix Revolutions",
-"released": 2003
-      }
-    }
-  },
-  {
-    "movies": {
-"identity": 9,
-"labels": [
-        "Movie"
-      ],
-"properties": {
-"tagline": "Free your mind",
-"title": "The Matrix Reloaded",
-"released": 2003
-      }
-    }
-  },
-  {
-    "movies": {
 "identity": 154,
 "labels": [
         "Movie"
@@ -151,32 +99,6 @@
 "tagline": "Evil has its winning ways",
 "title": "The Devil's Advocate",
 "released": 1997
-      }
-    }
-  },
-  {
-    "movies": {
-"identity": 10,
-"labels": [
-        "Movie"
-      ],
-"properties": {
-"tagline": "Everything that has a beginning has an end",
-"title": "The Matrix Revolutions",
-"released": 2003
-      }
-    }
-  },
-  {
-    "movies": {
-"identity": 9,
-"labels": [
-        "Movie"
-      ],
-"properties": {
-"tagline": "Free your mind",
-"title": "The Matrix Reloaded",
-"released": 2003
       }
     }
   }
