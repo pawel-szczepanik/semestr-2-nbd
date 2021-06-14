@@ -47,4 +47,24 @@
 	RETURN movie
 
 
-9.	(za 0.2pkt) Zestaw zapytań powodujących uzupełnienie bazy danych o film Captain America: The First Avenger wraz z uzupełnieniem informacji o reżyserze, scenarzystach i odtwórcach głównych ról (w oparciu o skrócone informacje z IMDB - http://www.imdb.com/title/tt0458339/) + zapytanie pokazujące dodany do bazy film wraz odtwórcami głównych ról, scenarzystą i reżyserem. Plik SVG ma pokazywać wynik ostatniego zapytania.  
+9.	(za 0.2pkt) Zestaw zapytań powodujących uzupełnienie bazy danych o film Captain America: The First Avenger wraz z uzupełnieniem informacji o reżyserze, scenarzystach i odtwórcach głównych ról (w oparciu o skrócone informacje z IMDB - http://www.imdb.com/title/tt0458339/) + zapytanie pokazujące dodany do bazy film wraz odtwórcami głównych ról, scenarzystą i reżyserem. Plik SVG ma pokazywać wynik ostatniego zapytania. 
+
+	CREATE (capitanAmericaMovie:Movie {title: "Captain America: The First Avenger"})
+	CREATE (director:Person {name: "Joe Johnston"})
+	CREATE (screenplay1:Person {name: "Christopher Markus"})
+	CREATE (screenplay2:Person {name: "Stephen McFeely"})
+	CREATE (filmstar1:Person {name: "Chris Evans"})
+	CREATE (filmstar2:Person {name: "Hugo Weaving"})
+	CREATE (filmstar3:Person {name: "Samuel L. Jackson"})
+	
+	CREATE (director) -[:DIRECTED]-> (capitanAmericaMovie),
+	(screenplay1) -[:WROTE]-> (capitanAmericaMovie),
+	(screenplay2) -[:WROTE]-> (capitanAmericaMovie),
+	(filmstar1) -[:ACTED_IN]-> (capitanAmericaMovie),
+	(filmstar2) -[:ACTED_IN]-> (capitanAmericaMovie),
+	(filmstar3) -[:ACTED_IN]-> (capitanAmericaMovie)
+	
+	MATCH (people:Person) -- (movie:Movie {title: "Captain America: The First Avenger"})
+	RETURN movie, people
+	
+	
