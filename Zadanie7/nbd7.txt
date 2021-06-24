@@ -28,16 +28,20 @@ curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_2", "surnam
 
 6.	Usuń jeden z dokumentów z bazy. 
 
+curl -XDELETE -i http://localhost:8098/buckets/s22559/keys/Name_1
 
 7.	Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie. 
 
+curl -i http://localhost:8098/buckets/s22559/keys/Name_1
 
 8.	Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza. 
 
+curl -XPOST -H "Content-Type: application/json" -i -d '{"name": "Name_6"}' http://localhost:8098/buckets/s22559/keys
 
 9.	Pobierz z bazy element z zadania 8. 
 
+curl -i http://localhost:8098/buckets/s22559/keys/CDAWoPZAh3Jxd6YKtS23dCVo4an
 
 10.	Usuń z bazy element z zadania 8. 
 
-
+curl -XDELETE -i http://localhost:8098/buckets/s22559/keys/CDAWoPZAh3Jxd6YKtS23dCVo4an
