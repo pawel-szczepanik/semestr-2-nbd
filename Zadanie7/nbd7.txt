@@ -1,0 +1,43 @@
+1.	Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów. 
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_1", "surname": "Surname_1", "birth-date": 2003-05-01T05:10:00, "shoe-size": 43.0}' http://localhost:8098/buckets/s22559/keys/Name_1
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_2", "surname": "Surname_2", "birth-date": 2004-01-01T00:10:05, "shoe-size": 45.5}' http://localhost:8098/buckets/s22559/keys/Name_2
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_3", "surname": "Surname_3", "birth-date": 1999-02-12T20:11:12, "shoe-size": 39.0}' http://localhost:8098/buckets/s22559/keys/Name_3
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_4", "surname": "Surname_4", "birth-date": 2012-06-21T09:10:48, "shoe-size": 51.0}' http://localhost:8098/buckets/s22559/keys/Name_4
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_5", "surname": "Surname_5", "birth-date": 1952-12-21T12:10:53, "shoe-size": 46.5}' http://localhost:8098/buckets/s22559/keys/Name_5
+
+2.	Pobierz z bazy jedną z dodanych przez Ciebie wartości. 
+
+curl -i http://localhost:8098/buckets/s22559/keys/Name_4
+
+3.	Zmodyfikuj jedną z wartości – dodając dodatkowe pole do dokumentu. 
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_5", "surname": "Surname_5", "birth-date": 1952-12-21T12:10:53, "shoe-size": 46.5, "hair-colour": "blonde"}' http://localhost:8098/buckets/s22559/keys/Name_5
+
+4.	Zmodyfikuj jedną z wartości – usuwając jedną pole z wybranego dokumentu. 
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_3", "surname": "Surname_3", "birth-date": 1999-02-12T20:11:12}' http://localhost:8098/buckets/s22559/keys/Name_3
+
+5.	Zmodyfikuj jedną z wartości – zmieniając wartość jednego z pól.  
+
+curl -XPUT -H "Content-Type: application/json" -i -d '{"name": "Name_2", "surname": "Surname_2", "birth-date": 1970-01-01T00:00:00, "shoe-size": 45.5}' http://localhost:8098/buckets/s22559/keys/Name_2
+
+6.	Usuń jeden z dokumentów z bazy. 
+
+
+7.	Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie. 
+
+
+8.	Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza. 
+
+
+9.	Pobierz z bazy element z zadania 8. 
+
+
+10.	Usuń z bazy element z zadania 8. 
+
+
