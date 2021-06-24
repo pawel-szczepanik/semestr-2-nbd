@@ -1,0 +1,54 @@
+====== 1 obiekt ======
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96    0     0  100    96      0  12000 --:--:-- --:--:-- --:--:-- 12000HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 24 Jun 2021 22:39:20 GMT
+Content-Type: application/json
+Content-Length: 0
+
+====== 2 obiekt ======
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96    0     0  100    96      0  10666 --:--:-- --:--:-- --:--:-- 10666HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 24 Jun 2021 22:39:56 GMT
+Content-Type: application/json
+Content-Length: 0
+
+====== 3 obiekt ======
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96    0     0  100    96      0  12000 --:--:-- --:--:-- --:--:-- 12000HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 24 Jun 2021 22:40:15 GMT
+Content-Type: application/json
+Content-Length: 0
+
+====== 4 obiekt ======
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96    0     0  100    96      0  12000 --:--:-- --:--:-- --:--:-- 13714HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 24 Jun 2021 22:41:24 GMT
+Content-Type: application/json
+Content-Length: 0
+
+====== 5 obiekt ======
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96    0     0  100    96      0  10666 --:--:-- --:--:-- --:--:-- 12000HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Thu, 24 Jun 2021 22:42:04 GMT
+Content-Type: application/json
+Content-Length: 0

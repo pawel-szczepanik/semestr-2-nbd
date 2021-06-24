@@ -1,0 +1,14 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    96  100    96    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8H0tiDD8qO4YzMKgLZTAlMuaxMoi0ed7iywIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22559>; rel="up"
+Last-Modified: Thu, 24 Jun 2021 22:41:24 GMT
+ETag: "4VfcWyIQUi9MS3pKOLMQ5p"
+Date: Thu, 24 Jun 2021 22:42:31 GMT
+Content-Type: application/json
+Content-Length: 96
+
+{"name": "Name_4", "surname": "Surname_4", "birth-date": 2012-06-21T09:10:48, "shoe-size": 51.0}
