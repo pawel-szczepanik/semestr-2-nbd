@@ -1,0 +1,1 @@
+Program działa/wspiera tylko wersje Riak 2.0 i wyższe. Dla niższych wersji Riak program może zachowywać się nieoczekiwanie.
